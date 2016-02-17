@@ -1,6 +1,6 @@
 <nav>
   <div class="nav-wrapper grey darken-3">
-    <a href="#" class="brand-logo">BitPub</a>
+    <a href="#" class="brand-logo top-nav">BitPub</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li>
         <%= link_to "GitHub Profile", "https://github.com/#{current_user.nickname}", target: "_blank" %>
@@ -12,14 +12,23 @@
   </div>
 </nav>
 
-<div class="container center">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-    <h1 class="home">You Are Authorized</h1>
-    <%= image_tag current_user.image_url, class: "img-circle img-thumbnail home-image" %>
-    <h2 class="home"> <%= current_user.name %> </h2>
-    <h2 class="home"> <%= current_user.nickname %> </h2>
-    <h2 class="home"> <%= current_user.email %> </h2>
+<div class="container">
+  <div class="row">
+    <div class="col 4">
+      <br>
+      <%= image_tag current_user.image_url, class: "responsive-img profile-pic" %>
+      <h4 class="home"> <%= current_user.name %> </h4>
+      <h5 class="home"> <%= current_user.nickname %> </h5>
+      <hr>
+      <h6 class="home"> <%= current_user.email %> </h6>
+    </div>
+    <div class="col 4">
+      <h6 class="home"> <%= current_user.nickname %> </h6>
+
+    </div>
+    <div class="col 4">
+      <h6 class="home"> <%= current_user.nickname %> </h6>
+
+    </div>
   </div>
-  <div class="col-md-2"></div>
 </div>

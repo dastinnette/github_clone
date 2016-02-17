@@ -1,3 +1,5 @@
+/* WELCOME PAGE */
+
 #homepage {
   background: url(welcome.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -9,4 +11,17 @@
 .homepage-text {
   color: white;
   font-family: Roboto;
+}
+
+/* NAVBAR */
+
+.top-nav {
+  margin-left: 11px;
+}
+
+/* PROFILE PAGE */
+
+.profile-pic {
+  border-radius: 5%;
+  height: 250px;
 }
