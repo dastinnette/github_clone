@@ -1,32 +1,25 @@
-require 'net/http'
-require 'json'
-
 class GithubService
 attr_reader :connection, :current_user
 
   def initialize(current_user)
     @current_user = current_user
     @connection = Faraday.new(url: "https://api.github.com")
-    @connection.headers = {"Authorization" => "token #{current_user.token}"}
   end
 
-  # def self.call(current_user)
-  #   path = "https://api.github.com/#{current_user.nickname}/following?access_token=#{current_user.token}/"
-  #   uri = URI(path)
-  #   response = Net::HTTP.get_response(uri)
-  #   JSON.parse(response.body)
-  # end
-
   def following
-    parse(connection.get("/users/#{current_user.nickname}/following"))
+    parse(connection.get("/user/following", {access_token: current_user.token}))
   end
 
   def follower
-    parse(connection.get("/users/#{current_user.nickname}/followers"))
+    parse(connection.get("/user/followers", {access_token: current_user.token}))
   end
 
   def star
-    parse(connection.get("/users/#{current_user.nickname}/starred"))
+    parse(connection.get("/user/starred", {access_token: current_user.token}))
+  end
+
+  def repo
+    parse(connection.get("/user/repos", {access_token: current_user.token}))
   end
 
   private

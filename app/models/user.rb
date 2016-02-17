@@ -13,8 +13,4 @@ class User < ActiveRecord::Base
     user
   end
 
-  # def self.get_following(user)
-  #   GithubService.call(user)
-  # end
-
 end

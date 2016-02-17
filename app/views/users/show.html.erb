@@ -22,42 +22,46 @@
       <br>
       <h6 class="home"> <%= current_user.email %> </h6>
       <br>
-      <h6 class="home"> "Followers" <%= @followers.count %> "Starred" <%= @stars.count %> "Following" <%= @followings.count %> </h6>
+      <h6 class="home"> Followers <%= @followers.count %> Starred <%= @stars.count %> Following <%= @followings.count %> </h6>
       <h6 class="home"> "Total Contributions" "Longest Streak" "Current Streak" </h6>
     </div>
-    <div class="col s4">
-      <br>
-      <h5 class="center">Repositories</h5>
-      <div class="box">
-        <table>
-          <tbody>
-              <tr>
-                <td>Repo</td>
-                <td>Repo</td>
-                <td>Repo</td>
-                <td>Repo</td>
-                <td>Repo</td>
-                <td>Repo</td>
-              </tr>
-          </tbody>
-        </table>
+
+    <div>
+      <div class="col s4">
+        <br>
+        <h5 class="center">Repositories</h5>
+        <div class="box">
+          <table>
+            <tbody>
+              <% @repos.each do |repo| %>
+                <tr>
+                  <td><%= repo[:name] %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-    <div class="col s4">
-      <br>
-      <h5 class="center">Recent Activity</h5>
-      <div class="box">
-        <table>
-          <tbody>
-            <tr>
-              <td>Activity</td>
-              <td>Activity</td>
-              <td>Activity</td>
-              <td>Activity</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col s4">
+        <br>
+        <h5 class="center">Recent Activity</h5>
+        <div class="box">
+          <table>
+            <tbody>
+              <% @repos.each do |repo| %>
+                <tr>
+                  <td><%= repo[:name] %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
       </div>
+
+      <row class="col s8" style="border: 5px solid black">
+        <h1>GITHUB</h1>
+      </row>
+
     </div>
   </div>
 </div>
