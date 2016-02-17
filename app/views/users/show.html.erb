@@ -13,50 +13,51 @@
 </nav>
 
 <div class="row">
-  <div class="col 4">
-    <br>
-    <%= image_tag current_user.image_url, class: "responsive-img profile-pic" %>
-    <h4 class="home"> <%= current_user.name %> </h4>
-    <h5 class="home"> <%= current_user.nickname %> </h5>
-    <br>
-    <h6 class="home"> <%= current_user.email %> </h6>
-    <br>
-    <h6 class="home"> "Followers" "Starred" "Following" </h6>
-    <h6 class="home"> "Total Contributions" "Longest Streak" "Current Streak" </h6>
-  </div>
-  <div class="col 4">
-    <br>
-    <h5 class="center">Repositories</h5>
-    <div class="box">
-      <table>
-        <tbody>
-            <tr>
-              <td>Repo</td>
-              <td>Repo</td>
-              <td>Repo</td>
-              <td>Repo</td>
-              <td>Repo</td>
-              <td>Repo</td>
-            </tr>
-        </tbody>
-      </table>
+  <div class="container">
+    <div class="col s4">
+      <br>
+      <%= image_tag current_user.image_url, class: "responsive-img profile-pic" %>
+      <h4 class="home"> <%= current_user.name %> </h4>
+      <h5 class="home"> <%= current_user.nickname %> </h5>
+      <br>
+      <h6 class="home"> <%= current_user.email %> </h6>
+      <br>
+      <h6 class="home"> "Followers" "Starred" "Following" </h6>
+      <h6 class="home"> "Total Contributions" "Longest Streak" "Current Streak" </h6>
     </div>
-  </div>
-  <div class="col 4">
-    <br>
-    <h5 class="center">Recent Activity</h5>
-    <div class="box">
-      <table>
-        <tbody>
-          <tr>
-            <td>Activity</td>
-            <td>Activity</td>
-            <td>Activity</td>
-            <td>Activity</td>
-            <td>Activity</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="col s4">
+      <br>
+      <h5 class="center">Repositories</h5>
+      <div class="box">
+        <table>
+          <tbody>
+              <tr>
+                <td>Repo</td>
+                <td>Repo</td>
+                <td>Repo</td>
+                <td>Repo</td>
+                <td>Repo</td>
+                <td>Repo</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col s4">
+      <br>
+      <h5 class="center">Recent Activity</h5>
+      <div class="box">
+        <table>
+          <tbody>
+            <tr>
+              <td>Activity</td>
+              <td>Activity</td>
+              <td>Activity</td>
+              <td>Activity</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
