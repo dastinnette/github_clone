@@ -25,3 +25,8 @@
   border-radius: 5%;
   height: 250px;
 }
+
+.box {
+  max-height: 300px;
+  overflow-y: auto;
+}
