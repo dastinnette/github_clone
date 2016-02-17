@@ -29,8 +29,8 @@
     <div>
       <div class="col s4">
         <br>
-        <h5 class="center">Repositories</h5>
-        <div class="box">
+        <h5 class="center">Your Repositories</h5>
+        <div class="box collection">
           <table>
             <tbody>
               <% @repos.each do |repo| %>
@@ -58,8 +58,21 @@
         </div>
       </div>
 
-      <row class="col s8" style="border: 5px solid black">
-        <h1>GITHUB</h1>
+      <row class="col s8">
+
+        <h5 class="center">Activity Feed</h5>
+        <div class="box collection">
+          <table>
+            <tbody>
+              <% @repos.each do |repo| %>
+                <tr>
+                  <td><%= repo[:name] %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+
       </row>
 
     </div>
