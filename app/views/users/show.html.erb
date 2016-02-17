@@ -22,7 +22,7 @@
       <br>
       <h6 class="home"> <%= current_user.email %> </h6>
       <br>
-      <h6 class="home"> "Followers" "Starred" "Following" </h6>
+      <h6 class="home"> "Followers" <%= @followers.count %> "Starred" <%= @stars.count %> "Following" <%= @followings.count %> </h6>
       <h6 class="home"> "Total Contributions" "Longest Streak" "Current Streak" </h6>
     </div>
     <div class="col s4">
