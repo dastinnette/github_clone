@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
 
   def create
+    # remove instance variable - just local variable
     @user = User.find_or_create_from_auth(request.env['omniauth.auth'])
     if @user
       session[:user_id] = @user.id
