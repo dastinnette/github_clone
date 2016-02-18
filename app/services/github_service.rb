@@ -27,15 +27,15 @@ attr_reader :connection, :current_user, :stats
     parse(connection.get("/users/#{current_user.nickname}/orgs", {access_token: current_user.token}))
   end
 
-  def find_user_total_commits(user)
+  def find_user_total_commits(current_user)
     stats.data.scores.reduce(:+)
   end
 
-  def find_user_current_streak(user)
+  def find_user_current_streak(current_user)
     stats.streak.count
   end
 
-  def find_user_longest_streak(user)
+  def find_user_longest_streak(current_user)
     stats.longest_streak.count
   end
 
