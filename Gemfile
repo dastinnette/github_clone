@@ -17,6 +17,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
   gem 'faraday'
+  gem 'rspec-rails'
 end
 
 group :development do
