@@ -22,6 +22,10 @@ attr_reader :connection, :current_user
     parse(connection.get("/user/repos", {access_token: current_user.token}))
   end
 
+  def org
+    parse(connection.get("/users/#{current_user.nickname}/orgs", {access_token: current_user.token}))
+  end
+
   private
 
   def parse(response)

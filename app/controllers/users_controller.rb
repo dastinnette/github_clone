@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     @followers  = github_service.follower
     @stars      = github_service.star
     @repos      = github_service.repo
+    @orgs       = github_service.org
   end
 
 end
