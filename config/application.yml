@@ -6,10 +6,13 @@
 # stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
 # stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
 
-development:
-  GITHUB_KEY: acb0bedc53502664480d
-  GITHUB_SECRET: bf6ccda81ba6717c12d648f2ef8062fa82c8cb54
+
+GITHUB_KEY: acb0bedc53502664480d
+GITHUB_SECRET: bf6ccda81ba6717c12d648f2ef8062fa82c8cb54
 
 # production:        Create another github repo github_clone_production
 #   GITHUB_KEY:
 #   GITHUB_SECRET:
+
+test:
+  GITHUB_USER_TOKEN: 42f2ea957eaeebfe6599690fae935334043b2d8d

@@ -18,7 +18,7 @@ RSpec.configure do |config|
                           nickname: 'dastinnette',
                           name: 'David Stinnette',
                           image_url: 'http://viraltrendingnews.com/wp-content/uploads/2015/01/14207265577372-50-reasons-why-nicolas-cage-is-the-greatest-human-1-5571-1389124720-1_big.jpg',
-                          token: '42f2ea957eaeebfe6599690fae935334043b2d8d')
+                          token: ENV['GITHUB_USER_TOKEN'])
   end
 
   def login
