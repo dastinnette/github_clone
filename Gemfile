@@ -15,6 +15,7 @@ gem 'faraday'
 gem 'githubstats'
 
 group :development, :test do
+  gem 'simplecov', :require => false, :group => :test
   gem 'webmock'
   gem 'pry'
   gem 'binding_of_caller'
