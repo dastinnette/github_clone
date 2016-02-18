@@ -10,4 +10,14 @@ RSpec.describe "GitHub API", type: :request do
     end
   end
 
+  it "returns users a user is following" do
+    VCR.use_cassette("users_following") do
+      service = GithubService.new(user).following
+
+      expect(service.count).to eq(5)
+    end
+  end
+
+  
+
 end
