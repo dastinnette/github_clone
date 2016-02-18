@@ -6,6 +6,7 @@ RSpec.describe "GitHub API", type: :request do
     VCR.use_cassette("users_followers") do
       service = GithubService.new(user).follower
 
+
       expect(service.count).to eq(9)
     end
   end
@@ -14,6 +15,7 @@ RSpec.describe "GitHub API", type: :request do
     VCR.use_cassette("users_following") do
       service = GithubService.new(user).following
 
+      # expect(service.first.nickname).to eq("applegrain")
       expect(service.count).to eq(5)
     end
   end
