@@ -35,7 +35,7 @@
             <tbody>
               <% @repos.each do |repo| %>
                 <tr>
-                  <td><%= repo[:name] %></td>
+                  <td><%= link_to repo[:name], "https://github.com/#{repo[:full_name]}", target: "_blank" %></td>
                 </tr>
               <% end %>
             </tbody>
