@@ -1,44 +1,55 @@
 require 'rails_helper'
 
 RSpec.describe "GitHub API", type: :request do
+  attr_reader :service
+
+  before do
+    @service = GithubService.new(user)
+  end
 
   it "returns a user's followers" do
     VCR.use_cassette("users_followers") do
-      service = GithubService.new(user).follower
+      followers      = service.follower
+      first_follower = followers.first
 
-
-      expect(service.count).to eq(9)
+      expect(first_follower[:login]).to eq("mitchashby16")
+      expect(service.follower.count).to eq(9)
     end
   end
 
   it "returns users a user is following" do
     VCR.use_cassette("users_following") do
-      service = GithubService.new(user).following
+      followings = service.following
+      follow     = followings.first
 
-      # expect(service.first.nickname).to eq("applegrain")
-      expect(service.count).to eq(5)
+      expect(follow[:login]).to eq("jcasimir")
+      expect(service.following.count).to eq(5)
     end
   end
 
   it "returns a user's stars" do
     VCR.use_cassette("users_stars") do
-      service = GithubService.new(user).star
+      stars   = service.star
+      starred = stars.first
 
-      expect(service.count).to eq(1)
+      expect(starred[:name]).to eq("the_pivot")
+      expect(service.star.count).to eq(1)
     end
   end
 
   it "returns a user's repos" do
     VCR.use_cassette("users_repos") do
-      service = GithubService.new(user).repo
+      repos      = service.repo
+      first_repo = repos.first
 
-      expect(service.count).to eq(30)
+      expect(first_repo[:name]).to eq("posse_challenges")
+      expect(service.repo.count).to eq(30)
     end
   end
 
   it "returns a user's total commits" do
     VCR.use_cassette("users_total_commits") do
-      service = GithubService.new(user).find_user_total_commits(user)
+      service = @service.find_user_total_commits(user)
 
       expect(service).to eq(856)
     end
@@ -46,7 +57,7 @@ RSpec.describe "GitHub API", type: :request do
 
   it "returns a user's current streak" do
     VCR.use_cassette("users_current_streak") do
-      service = GithubService.new(user).find_user_current_streak(user)
+      service = @service.find_user_current_streak(user)
 
       expect(service).to eq(4)
     end
@@ -54,7 +65,7 @@ RSpec.describe "GitHub API", type: :request do
 
   it "returns a user's longest streak" do
     VCR.use_cassette("users_longest_streak") do
-      service = GithubService.new(user).find_user_longest_streak(user)
+      service = @service.find_user_longest_streak(user)
 
       expect(service).to eq(11)
     end
@@ -62,9 +73,11 @@ RSpec.describe "GitHub API", type: :request do
 
   it "returns a user's organizations" do
     VCR.use_cassette("users_orgs") do
-      service = GithubService.new(user).org
+      orgs      = @service.org
+      first_org = orgs.first
 
-      expect(service.count).to eq(0)
+      expect(first_org[:login]).to eq("TuringTestOrganization")
+      expect(service.org.count).to eq(1)
     end
   end
 end
