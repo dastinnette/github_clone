@@ -26,4 +26,12 @@ RSpec.describe "GitHub API", type: :request do
     end
   end
 
+  it "returns a user's repos" do
+    VCR.use_cassette("users_repos") do
+      service = GithubService.new(user).repo
+
+      expect(service.count).to eq(30)
+    end
+  end
+
 end
