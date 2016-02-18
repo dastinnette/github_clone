@@ -11,13 +11,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'figaro'
 gem 'omniauth-github'
+gem 'faraday'
 
 group :development, :test do
+  gem 'webmock'
   gem 'pry'
   gem 'binding_of_caller'
   gem 'better_errors'
-  gem 'faraday'
   gem 'rspec-rails'
+  gem 'vcr'
 end
 
 group :development do
