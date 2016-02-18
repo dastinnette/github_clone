@@ -58,4 +58,11 @@ RSpec.describe "GitHub API", type: :request do
     end
   end
 
+  it "returns a user's organizations" do
+    VCR.use_cassette("users_orgs") do
+      service = GithubService.new(user).org
+
+      expect(service.count).to eq(0)
+    end
+  end
 end
