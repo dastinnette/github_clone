@@ -1,14 +1,13 @@
 require 'rails_helper'
 
-describe "GithubService" do
-  context "#followers" do
-    it "returns followers" do
-      VCR.use_cassette("github_service#followers") do
-        service = GithubService.new
-        followers = service.followers
+RSpec.describe "GitHub API", type: :request do
 
-        expect(followers.count).to eq(9)
-      end
+  it "returns a user's followers" do
+    VCR.use_cassette("users_followers") do
+      service = GithubService.new(user).follower
+
+      expect(service.count).to eq(9)
     end
   end
+
 end
