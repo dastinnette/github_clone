@@ -17,20 +17,48 @@
     <div class="col s4">
       <br>
       <%= image_tag current_user.image_url, class: "responsive-img profile-pic" %>
-      <h4 class="home"> <%= current_user.name %> </h4>
-      <h5 class="home"> <%= current_user.nickname %> </h5>
-      <br>
-      <h6 class="home"> <%= current_user.email %> </h6>
-      <br>
-      <h6 class="home"> Followers <%= @followers.count %> Starred <%= @stars.count %> Following <%= @followings.count %> </h6>
-      <h6 class="home"> "Total Contributions" "Longest Streak" "Current Streak" </h6>
-      <h6 class="home"> My Organizations <%= @orgs.count %> </h6>
+      <h4> <%= current_user.name %> </h4>
+      <h5> <%= current_user.nickname %> </h5>
+      <h6> <%= link_to current_user.email, "mailto:#{current_user.email}", target: "_blank" %> </h6>
+
+      <table class="highlight">
+        <tbody>
+          <tr>
+            <td>Followers</td>
+            <td><%= link_to @followers.count, "https://github.com/#{current_user.nickname}/followers", target: "_blank" %></td>
+          </tr>
+          <tr>
+            <td>Starred</td>
+            <td><%= link_to @stars.count, "https://github.com/stars", target: "_blank" %></td>
+          </tr>
+          <tr>
+            <td>Following</td>
+            <td><%= link_to @followings.count, "https://github.com/#{current_user.nickname}/following", target: "_blank" %></td>
+          </tr>
+          <tr>
+            <td>Total Contributions</td>
+            <td>Lollipop</td>
+          </tr>
+          <tr>
+            <td>Longest Streak</td>
+            <td>Lollipop</td>
+          </tr>
+          <tr>
+            <td>Current Streak</td>
+            <td>Lollipop</td>
+          </tr>
+          <tr>
+            <td>My Organizations</td>
+            <td><%= @orgs.count %></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div>
       <div class="col s4">
         <br>
-        <h5 class="center">Your Repositories</h5>
+        <h5 class="center">Repos</h5>
         <div class="box collection">
           <table>
             <tbody>
