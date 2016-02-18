@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
 gem 'omniauth-github'
 gem 'faraday'
+gem 'githubstats'
 
 group :development, :test do
   gem 'webmock'
