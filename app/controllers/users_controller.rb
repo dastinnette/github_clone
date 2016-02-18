@@ -9,6 +9,9 @@ class UsersController < ApplicationController
     @stars      = github_service.star
     @repos      = github_service.repo
     @orgs       = github_service.org
+    @total      = github_service.find_user_total_commits(current_user)
+    @longest    = github_service.find_user_longest_streak(current_user)
+    @current    = github_service.find_user_current_streak(current_user)
   end
 
 end

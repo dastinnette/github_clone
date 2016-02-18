@@ -1,9 +1,10 @@
 class GithubService
-attr_reader :connection, :current_user
+attr_reader :connection, :current_user, :stats
 
   def initialize(current_user)
     @current_user = current_user
-    @connection = Faraday.new(url: "https://api.github.com")
+    @connection   = Faraday.new(url: "https://api.github.com")
+    @stats        = GithubStats.new(current_user.nickname)
   end
 
   def following
@@ -24,6 +25,18 @@ attr_reader :connection, :current_user
 
   def org
     parse(connection.get("/users/#{current_user.nickname}/orgs", {access_token: current_user.token}))
+  end
+
+  def find_user_total_commits(current_user)
+    stats.data.scores.reduce(:+)
+  end
+
+  def find_user_current_streak(current_user)
+    stats.streak.count
+  end
+
+  def find_user_longest_streak(current_user)
+    stats.longest_streak.count
   end
 
   private
