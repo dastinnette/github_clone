@@ -18,6 +18,12 @@ RSpec.describe "GitHub API", type: :request do
     end
   end
 
-  
+  it "returns a user's stars" do
+    VCR.use_cassette("users_stars") do
+      service = GithubService.new(user).star
+
+      expect(service.count).to eq(1)
+    end
+  end
 
 end
