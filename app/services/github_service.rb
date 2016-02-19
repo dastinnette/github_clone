@@ -52,6 +52,7 @@ attr_reader :connection, :current_user, :stats, :token
     nicknames.map do |nickname|
       json_obj = parse(connection.get("/users/#{nickname}/events", token))
       messages = parse_commit_messages(json_obj)
+      binding.pry
       {nickname: nickname, commits: messages[0..4]}
     end
   end
