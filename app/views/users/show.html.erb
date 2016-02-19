@@ -35,22 +35,6 @@
             <td>Following</td>
             <td><%= link_to @followings.count, "https://github.com/#{current_user.nickname}/following", target: "_blank" %></td>
           </tr>
-          <tr>
-            <td>Total Contributions</td>
-            <td><%= @total %></td>
-          </tr>
-          <tr>
-            <td>Longest Streak</td>
-            <td><%= @longest %> days</td>
-          </tr>
-          <tr>
-            <td>Current Streak</td>
-            <td><%= @current %> days</td>
-          </tr>
-          <tr>
-            <td>My Organizations</td>
-            <td><%= @orgs.count %></td>
-          </tr>
         </tbody>
       </table>
     </div>
@@ -89,17 +73,44 @@
 
       <row class="col s8">
 
-        <h5 class="center">Community Feed</h5>
-        <div class="box collection">
-          <table>
-            <tbody>
-              <% @repos.each do |repo| %>
+        <div class="col s6">
+          <h5 class="center">Community Feed</h5>
+          <div class="box collection">
+            <table>
+              <tbody>
+                <% @repos.each do |repo| %>
+                  <tr>
+                    <td><%= repo[:name] %></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col s6">
+          <h5 class="center">Your Stats</h5>
+          <div class="box collection">
+            <table class="highlight">
+              <tbody>
                 <tr>
-                  <td><%= repo[:name] %></td>
+                  <td>Total Contributions</td>
+                  <td><%= @total %></td>
                 </tr>
-              <% end %>
-            </tbody>
-          </table>
+                <tr>
+                  <td>Longest Streak</td>
+                  <td><%= @longest %> days</td>
+                </tr>
+                <tr>
+                  <td>Current Streak</td>
+                  <td><%= @current %> days</td>
+                </tr>
+                <tr>
+                  <td>My Organizations</td>
+                  <td><%= link_to @orgs.count, "https://github.com/#{current_user.nickname}", target: "_blank" %></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
       </row>
