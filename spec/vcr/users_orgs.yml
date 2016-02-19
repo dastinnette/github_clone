@@ -1,0 +1,155 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/dastinnette/orgs?access_token=42f2ea957eaeebfe6599690fae935334043b2d8d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 19 Feb 2016 01:30:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4974'
+      X-Ratelimit-Reset:
+      - '1455848189'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Etag:
+      - W/"78281ba6bf1f4dd624e127acfe6f7c49"
+      X-Oauth-Scopes:
+      - ''
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - acb0bedc53502664480d
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - c6c65e5196703428e7641f7d1e9bc353
+      X-Github-Request-Id:
+      - 3F910F62:A4E9:11DFD94E:56C67023
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"login":"TuringTestOrganization","id":17304060,"url":"https://api.github.com/orgs/TuringTestOrganization","repos_url":"https://api.github.com/orgs/TuringTestOrganization/repos","events_url":"https://api.github.com/orgs/TuringTestOrganization/events","hooks_url":"https://api.github.com/orgs/TuringTestOrganization/hooks","issues_url":"https://api.github.com/orgs/TuringTestOrganization/issues","members_url":"https://api.github.com/orgs/TuringTestOrganization/members{/member}","public_members_url":"https://api.github.com/orgs/TuringTestOrganization/public_members{/member}","avatar_url":"https://avatars.githubusercontent.com/u/17304060?v=3","description":"For
+        testing organizations!"}]'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 01:30:11 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/dastinnette/orgs?access_token=42f2ea957eaeebfe6599690fae935334043b2d8d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 19 Feb 2016 01:30:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4973'
+      X-Ratelimit-Reset:
+      - '1455848189'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Etag:
+      - W/"78281ba6bf1f4dd624e127acfe6f7c49"
+      X-Oauth-Scopes:
+      - ''
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - acb0bedc53502664480d
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.v3
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 593010132f82159af0ded24b4932e109
+      X-Github-Request-Id:
+      - 3F910F62:A4EB:1B1210DF:56C67023
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"login":"TuringTestOrganization","id":17304060,"url":"https://api.github.com/orgs/TuringTestOrganization","repos_url":"https://api.github.com/orgs/TuringTestOrganization/repos","events_url":"https://api.github.com/orgs/TuringTestOrganization/events","hooks_url":"https://api.github.com/orgs/TuringTestOrganization/hooks","issues_url":"https://api.github.com/orgs/TuringTestOrganization/issues","members_url":"https://api.github.com/orgs/TuringTestOrganization/members{/member}","public_members_url":"https://api.github.com/orgs/TuringTestOrganization/public_members{/member}","avatar_url":"https://avatars.githubusercontent.com/u/17304060?v=3","description":"For
+        testing organizations!"}]'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 01:30:12 GMT
+recorded_with: VCR 3.0.1
