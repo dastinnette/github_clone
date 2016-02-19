@@ -81,26 +81,26 @@ RSpec.describe "GitHub API", type: :request do
     end
   end
 
-  # it "returns a list of the recent commits for the user" do
-  #   VCR.use_cassette("github_service#recent_commits") do
-  #     recent_commits = @service.recent_commits
-  #     first_commit = recent_commits.first
-  #
-  #     expect(recent_commits.count).to eq(13)
-  #     expect(first_commit).to eq("Started Omniauth-testing")
-  #   end
-  # end
-  #
-  # it "returns a list of followers and their recent commits" do
-  #   VCR.use_cassette("github_service#following_activity") do
-  #     all_activity = @service.following_activity
-  #     last_following = all_activity.last
-  #     commits = last_following[:commits]
-  #
-  #     expect(all_activity.count).to eq(7)
-  #     expect(last_following[:nickname]).to eq("danjwinter")
-  #     expect(commits.first).to eq("add rails 12 factor")
-  #   end
-  # end
+  it "returns a list of the recent commits for the user" do
+    VCR.use_cassette("users_recent_commits") do
+      user_commits = service.recent_commits
+      first_commit = user_commits.first
+
+      expect(user_commits.count).to eq(55)
+      expect(first_commit).to eq("My recent commits feed pulling proper data")
+    end
+  end
+
+  xit "returns a list of followers and their recent commits" do
+    VCR.use_cassette("users_community_feed") do
+      all_activity = @service.following_activity
+      last_following = all_activity.last
+      commits = last_following[:commits]
+
+      expect(all_activity.count).to eq(7)
+      expect(last_following[:nickname]).to eq("danjwinter")
+      expect(commits.first).to eq("add rails 12 factor")
+    end
+  end
 
 end
