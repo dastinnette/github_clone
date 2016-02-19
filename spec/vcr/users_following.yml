@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 19 Feb 2016 00:14:19 GMT
+      - Fri, 19 Feb 2016 01:30:07 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4991'
+      - '4980'
       X-Ratelimit-Reset:
-      - '1455843355'
+      - '1455848189'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Etag:
@@ -67,14 +67,14 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - d594a23ec74671eba905bf91ef329026
+      - a474937f3b2fa272558fa6dc951018ad
       X-Github-Request-Id:
-      - 3F910F62:C8D4:1CD68CDB:56C65E5B
+      - 3F910F62:A4EB:1B120A57:56C6701E
     body:
       encoding: ASCII-8BIT
       string: '[{"login":"jcasimir","id":43102,"avatar_url":"https://avatars.githubusercontent.com/u/43102?v=3","gravatar_id":"","url":"https://api.github.com/users/jcasimir","html_url":"https://github.com/jcasimir","followers_url":"https://api.github.com/users/jcasimir/followers","following_url":"https://api.github.com/users/jcasimir/following{/other_user}","gists_url":"https://api.github.com/users/jcasimir/gists{/gist_id}","starred_url":"https://api.github.com/users/jcasimir/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jcasimir/subscriptions","organizations_url":"https://api.github.com/users/jcasimir/orgs","repos_url":"https://api.github.com/users/jcasimir/repos","events_url":"https://api.github.com/users/jcasimir/events{/privacy}","received_events_url":"https://api.github.com/users/jcasimir/received_events","type":"User","site_admin":false},{"login":"JoshCheek","id":77495,"avatar_url":"https://avatars.githubusercontent.com/u/77495?v=3","gravatar_id":"","url":"https://api.github.com/users/JoshCheek","html_url":"https://github.com/JoshCheek","followers_url":"https://api.github.com/users/JoshCheek/followers","following_url":"https://api.github.com/users/JoshCheek/following{/other_user}","gists_url":"https://api.github.com/users/JoshCheek/gists{/gist_id}","starred_url":"https://api.github.com/users/JoshCheek/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/JoshCheek/subscriptions","organizations_url":"https://api.github.com/users/JoshCheek/orgs","repos_url":"https://api.github.com/users/JoshCheek/repos","events_url":"https://api.github.com/users/JoshCheek/events{/privacy}","received_events_url":"https://api.github.com/users/JoshCheek/received_events","type":"User","site_admin":false},{"login":"iandouglas","id":168030,"avatar_url":"https://avatars.githubusercontent.com/u/168030?v=3","gravatar_id":"","url":"https://api.github.com/users/iandouglas","html_url":"https://github.com/iandouglas","followers_url":"https://api.github.com/users/iandouglas/followers","following_url":"https://api.github.com/users/iandouglas/following{/other_user}","gists_url":"https://api.github.com/users/iandouglas/gists{/gist_id}","starred_url":"https://api.github.com/users/iandouglas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/iandouglas/subscriptions","organizations_url":"https://api.github.com/users/iandouglas/orgs","repos_url":"https://api.github.com/users/iandouglas/repos","events_url":"https://api.github.com/users/iandouglas/events{/privacy}","received_events_url":"https://api.github.com/users/iandouglas/received_events","type":"User","site_admin":false},{"login":"rwarbelow","id":3311609,"avatar_url":"https://avatars.githubusercontent.com/u/3311609?v=3","gravatar_id":"","url":"https://api.github.com/users/rwarbelow","html_url":"https://github.com/rwarbelow","followers_url":"https://api.github.com/users/rwarbelow/followers","following_url":"https://api.github.com/users/rwarbelow/following{/other_user}","gists_url":"https://api.github.com/users/rwarbelow/gists{/gist_id}","starred_url":"https://api.github.com/users/rwarbelow/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/rwarbelow/subscriptions","organizations_url":"https://api.github.com/users/rwarbelow/orgs","repos_url":"https://api.github.com/users/rwarbelow/repos","events_url":"https://api.github.com/users/rwarbelow/events{/privacy}","received_events_url":"https://api.github.com/users/rwarbelow/received_events","type":"User","site_admin":false},{"login":"applegrain","id":10555255,"avatar_url":"https://avatars.githubusercontent.com/u/10555255?v=3","gravatar_id":"","url":"https://api.github.com/users/applegrain","html_url":"https://github.com/applegrain","followers_url":"https://api.github.com/users/applegrain/followers","following_url":"https://api.github.com/users/applegrain/following{/other_user}","gists_url":"https://api.github.com/users/applegrain/gists{/gist_id}","starred_url":"https://api.github.com/users/applegrain/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/applegrain/subscriptions","organizations_url":"https://api.github.com/users/applegrain/orgs","repos_url":"https://api.github.com/users/applegrain/repos","events_url":"https://api.github.com/users/applegrain/events{/privacy}","received_events_url":"https://api.github.com/users/applegrain/received_events","type":"User","site_admin":false}]'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 00:14:19 GMT
+  recorded_at: Fri, 19 Feb 2016 01:30:07 GMT
 - request:
     method: get
     uri: https://api.github.com/user/following?access_token=42f2ea957eaeebfe6599690fae935334043b2d8d
@@ -96,7 +96,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 19 Feb 2016 00:14:19 GMT
+      - Fri, 19 Feb 2016 01:30:07 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -106,9 +106,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4990'
+      - '4979'
       X-Ratelimit-Reset:
-      - '1455843355'
+      - '1455848189'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Etag:
@@ -142,12 +142,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - bd82876e9bf04990f289ba22f246ee9b
+      - e724c57ebb9961c772a91e2dd7421c8d
       X-Github-Request-Id:
-      - 3F910F62:C8D3:192016FE:56C65E5B
+      - 3F910F62:A4E7:96C672C:56C6701F
     body:
       encoding: ASCII-8BIT
       string: '[{"login":"jcasimir","id":43102,"avatar_url":"https://avatars.githubusercontent.com/u/43102?v=3","gravatar_id":"","url":"https://api.github.com/users/jcasimir","html_url":"https://github.com/jcasimir","followers_url":"https://api.github.com/users/jcasimir/followers","following_url":"https://api.github.com/users/jcasimir/following{/other_user}","gists_url":"https://api.github.com/users/jcasimir/gists{/gist_id}","starred_url":"https://api.github.com/users/jcasimir/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jcasimir/subscriptions","organizations_url":"https://api.github.com/users/jcasimir/orgs","repos_url":"https://api.github.com/users/jcasimir/repos","events_url":"https://api.github.com/users/jcasimir/events{/privacy}","received_events_url":"https://api.github.com/users/jcasimir/received_events","type":"User","site_admin":false},{"login":"JoshCheek","id":77495,"avatar_url":"https://avatars.githubusercontent.com/u/77495?v=3","gravatar_id":"","url":"https://api.github.com/users/JoshCheek","html_url":"https://github.com/JoshCheek","followers_url":"https://api.github.com/users/JoshCheek/followers","following_url":"https://api.github.com/users/JoshCheek/following{/other_user}","gists_url":"https://api.github.com/users/JoshCheek/gists{/gist_id}","starred_url":"https://api.github.com/users/JoshCheek/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/JoshCheek/subscriptions","organizations_url":"https://api.github.com/users/JoshCheek/orgs","repos_url":"https://api.github.com/users/JoshCheek/repos","events_url":"https://api.github.com/users/JoshCheek/events{/privacy}","received_events_url":"https://api.github.com/users/JoshCheek/received_events","type":"User","site_admin":false},{"login":"iandouglas","id":168030,"avatar_url":"https://avatars.githubusercontent.com/u/168030?v=3","gravatar_id":"","url":"https://api.github.com/users/iandouglas","html_url":"https://github.com/iandouglas","followers_url":"https://api.github.com/users/iandouglas/followers","following_url":"https://api.github.com/users/iandouglas/following{/other_user}","gists_url":"https://api.github.com/users/iandouglas/gists{/gist_id}","starred_url":"https://api.github.com/users/iandouglas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/iandouglas/subscriptions","organizations_url":"https://api.github.com/users/iandouglas/orgs","repos_url":"https://api.github.com/users/iandouglas/repos","events_url":"https://api.github.com/users/iandouglas/events{/privacy}","received_events_url":"https://api.github.com/users/iandouglas/received_events","type":"User","site_admin":false},{"login":"rwarbelow","id":3311609,"avatar_url":"https://avatars.githubusercontent.com/u/3311609?v=3","gravatar_id":"","url":"https://api.github.com/users/rwarbelow","html_url":"https://github.com/rwarbelow","followers_url":"https://api.github.com/users/rwarbelow/followers","following_url":"https://api.github.com/users/rwarbelow/following{/other_user}","gists_url":"https://api.github.com/users/rwarbelow/gists{/gist_id}","starred_url":"https://api.github.com/users/rwarbelow/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/rwarbelow/subscriptions","organizations_url":"https://api.github.com/users/rwarbelow/orgs","repos_url":"https://api.github.com/users/rwarbelow/repos","events_url":"https://api.github.com/users/rwarbelow/events{/privacy}","received_events_url":"https://api.github.com/users/rwarbelow/received_events","type":"User","site_admin":false},{"login":"applegrain","id":10555255,"avatar_url":"https://avatars.githubusercontent.com/u/10555255?v=3","gravatar_id":"","url":"https://api.github.com/users/applegrain","html_url":"https://github.com/applegrain","followers_url":"https://api.github.com/users/applegrain/followers","following_url":"https://api.github.com/users/applegrain/following{/other_user}","gists_url":"https://api.github.com/users/applegrain/gists{/gist_id}","starred_url":"https://api.github.com/users/applegrain/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/applegrain/subscriptions","organizations_url":"https://api.github.com/users/applegrain/orgs","repos_url":"https://api.github.com/users/applegrain/repos","events_url":"https://api.github.com/users/applegrain/events{/privacy}","received_events_url":"https://api.github.com/users/applegrain/received_events","type":"User","site_admin":false}]'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 00:14:19 GMT
+  recorded_at: Fri, 19 Feb 2016 01:30:07 GMT
 recorded_with: VCR 3.0.1

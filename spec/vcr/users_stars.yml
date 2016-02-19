@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 19 Feb 2016 00:14:20 GMT
+      - Fri, 19 Feb 2016 01:30:08 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4989'
+      - '4978'
       X-Ratelimit-Reset:
-      - '1455843355'
+      - '1455848189'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Etag:
@@ -67,14 +67,14 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - e183f7c661b1bbc2c987b3c4dc7b04e0
+      - c6c65e5196703428e7641f7d1e9bc353
       X-Github-Request-Id:
-      - 3F910F62:C8D0:A8D56D2:56C65E5B
+      - 3F910F62:A4E9:11DFD58B:56C6701F
     body:
       encoding: ASCII-8BIT
       string: '[{"id":50873963,"name":"the_pivot","full_name":"jecrockett/the_pivot","owner":{"login":"jecrockett","id":12873495,"avatar_url":"https://avatars.githubusercontent.com/u/12873495?v=3","gravatar_id":"","url":"https://api.github.com/users/jecrockett","html_url":"https://github.com/jecrockett","followers_url":"https://api.github.com/users/jecrockett/followers","following_url":"https://api.github.com/users/jecrockett/following{/other_user}","gists_url":"https://api.github.com/users/jecrockett/gists{/gist_id}","starred_url":"https://api.github.com/users/jecrockett/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jecrockett/subscriptions","organizations_url":"https://api.github.com/users/jecrockett/orgs","repos_url":"https://api.github.com/users/jecrockett/repos","events_url":"https://api.github.com/users/jecrockett/events{/privacy}","received_events_url":"https://api.github.com/users/jecrockett/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/jecrockett/the_pivot","description":"","fork":false,"url":"https://api.github.com/repos/jecrockett/the_pivot","forks_url":"https://api.github.com/repos/jecrockett/the_pivot/forks","keys_url":"https://api.github.com/repos/jecrockett/the_pivot/keys{/key_id}","collaborators_url":"https://api.github.com/repos/jecrockett/the_pivot/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/jecrockett/the_pivot/teams","hooks_url":"https://api.github.com/repos/jecrockett/the_pivot/hooks","issue_events_url":"https://api.github.com/repos/jecrockett/the_pivot/issues/events{/number}","events_url":"https://api.github.com/repos/jecrockett/the_pivot/events","assignees_url":"https://api.github.com/repos/jecrockett/the_pivot/assignees{/user}","branches_url":"https://api.github.com/repos/jecrockett/the_pivot/branches{/branch}","tags_url":"https://api.github.com/repos/jecrockett/the_pivot/tags","blobs_url":"https://api.github.com/repos/jecrockett/the_pivot/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/jecrockett/the_pivot/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/jecrockett/the_pivot/git/refs{/sha}","trees_url":"https://api.github.com/repos/jecrockett/the_pivot/git/trees{/sha}","statuses_url":"https://api.github.com/repos/jecrockett/the_pivot/statuses/{sha}","languages_url":"https://api.github.com/repos/jecrockett/the_pivot/languages","stargazers_url":"https://api.github.com/repos/jecrockett/the_pivot/stargazers","contributors_url":"https://api.github.com/repos/jecrockett/the_pivot/contributors","subscribers_url":"https://api.github.com/repos/jecrockett/the_pivot/subscribers","subscription_url":"https://api.github.com/repos/jecrockett/the_pivot/subscription","commits_url":"https://api.github.com/repos/jecrockett/the_pivot/commits{/sha}","git_commits_url":"https://api.github.com/repos/jecrockett/the_pivot/git/commits{/sha}","comments_url":"https://api.github.com/repos/jecrockett/the_pivot/comments{/number}","issue_comment_url":"https://api.github.com/repos/jecrockett/the_pivot/issues/comments{/number}","contents_url":"https://api.github.com/repos/jecrockett/the_pivot/contents/{+path}","compare_url":"https://api.github.com/repos/jecrockett/the_pivot/compare/{base}...{head}","merges_url":"https://api.github.com/repos/jecrockett/the_pivot/merges","archive_url":"https://api.github.com/repos/jecrockett/the_pivot/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/jecrockett/the_pivot/downloads","issues_url":"https://api.github.com/repos/jecrockett/the_pivot/issues{/number}","pulls_url":"https://api.github.com/repos/jecrockett/the_pivot/pulls{/number}","milestones_url":"https://api.github.com/repos/jecrockett/the_pivot/milestones{/number}","notifications_url":"https://api.github.com/repos/jecrockett/the_pivot/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/jecrockett/the_pivot/labels{/name}","releases_url":"https://api.github.com/repos/jecrockett/the_pivot/releases{/id}","deployments_url":"https://api.github.com/repos/jecrockett/the_pivot/deployments","created_at":"2016-02-01T21:50:20Z","updated_at":"2016-02-18T03:37:50Z","pushed_at":"2016-02-11T21:44:12Z","git_url":"git://github.com/jecrockett/the_pivot.git","ssh_url":"git@github.com:jecrockett/the_pivot.git","clone_url":"https://github.com/jecrockett/the_pivot.git","svn_url":"https://github.com/jecrockett/the_pivot","homepage":null,"size":26406,"stargazers_count":1,"watchers_count":1,"language":"Ruby","has_issues":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"open_issues_count":2,"forks":0,"open_issues":2,"watchers":1,"default_branch":"master","permissions":{"admin":false,"push":true,"pull":true}}]'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 00:14:20 GMT
+  recorded_at: Fri, 19 Feb 2016 01:30:08 GMT
 - request:
     method: get
     uri: https://api.github.com/user/starred?access_token=42f2ea957eaeebfe6599690fae935334043b2d8d
@@ -96,7 +96,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 19 Feb 2016 00:14:20 GMT
+      - Fri, 19 Feb 2016 01:30:09 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -106,9 +106,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4988'
+      - '4977'
       X-Ratelimit-Reset:
-      - '1455843355'
+      - '1455848189'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Etag:
@@ -142,12 +142,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - 01d096e6cfe28f8aea352e988c332cd3
+      - a241e1a8264a6ace03db946c85b92db3
       X-Github-Request-Id:
-      - 3F910F62:C8D5:120B8B37:56C65E5C
+      - 3F910F62:A4E7:96C67EF:56C67020
     body:
       encoding: ASCII-8BIT
       string: '[{"id":50873963,"name":"the_pivot","full_name":"jecrockett/the_pivot","owner":{"login":"jecrockett","id":12873495,"avatar_url":"https://avatars.githubusercontent.com/u/12873495?v=3","gravatar_id":"","url":"https://api.github.com/users/jecrockett","html_url":"https://github.com/jecrockett","followers_url":"https://api.github.com/users/jecrockett/followers","following_url":"https://api.github.com/users/jecrockett/following{/other_user}","gists_url":"https://api.github.com/users/jecrockett/gists{/gist_id}","starred_url":"https://api.github.com/users/jecrockett/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jecrockett/subscriptions","organizations_url":"https://api.github.com/users/jecrockett/orgs","repos_url":"https://api.github.com/users/jecrockett/repos","events_url":"https://api.github.com/users/jecrockett/events{/privacy}","received_events_url":"https://api.github.com/users/jecrockett/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/jecrockett/the_pivot","description":"","fork":false,"url":"https://api.github.com/repos/jecrockett/the_pivot","forks_url":"https://api.github.com/repos/jecrockett/the_pivot/forks","keys_url":"https://api.github.com/repos/jecrockett/the_pivot/keys{/key_id}","collaborators_url":"https://api.github.com/repos/jecrockett/the_pivot/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/jecrockett/the_pivot/teams","hooks_url":"https://api.github.com/repos/jecrockett/the_pivot/hooks","issue_events_url":"https://api.github.com/repos/jecrockett/the_pivot/issues/events{/number}","events_url":"https://api.github.com/repos/jecrockett/the_pivot/events","assignees_url":"https://api.github.com/repos/jecrockett/the_pivot/assignees{/user}","branches_url":"https://api.github.com/repos/jecrockett/the_pivot/branches{/branch}","tags_url":"https://api.github.com/repos/jecrockett/the_pivot/tags","blobs_url":"https://api.github.com/repos/jecrockett/the_pivot/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/jecrockett/the_pivot/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/jecrockett/the_pivot/git/refs{/sha}","trees_url":"https://api.github.com/repos/jecrockett/the_pivot/git/trees{/sha}","statuses_url":"https://api.github.com/repos/jecrockett/the_pivot/statuses/{sha}","languages_url":"https://api.github.com/repos/jecrockett/the_pivot/languages","stargazers_url":"https://api.github.com/repos/jecrockett/the_pivot/stargazers","contributors_url":"https://api.github.com/repos/jecrockett/the_pivot/contributors","subscribers_url":"https://api.github.com/repos/jecrockett/the_pivot/subscribers","subscription_url":"https://api.github.com/repos/jecrockett/the_pivot/subscription","commits_url":"https://api.github.com/repos/jecrockett/the_pivot/commits{/sha}","git_commits_url":"https://api.github.com/repos/jecrockett/the_pivot/git/commits{/sha}","comments_url":"https://api.github.com/repos/jecrockett/the_pivot/comments{/number}","issue_comment_url":"https://api.github.com/repos/jecrockett/the_pivot/issues/comments{/number}","contents_url":"https://api.github.com/repos/jecrockett/the_pivot/contents/{+path}","compare_url":"https://api.github.com/repos/jecrockett/the_pivot/compare/{base}...{head}","merges_url":"https://api.github.com/repos/jecrockett/the_pivot/merges","archive_url":"https://api.github.com/repos/jecrockett/the_pivot/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/jecrockett/the_pivot/downloads","issues_url":"https://api.github.com/repos/jecrockett/the_pivot/issues{/number}","pulls_url":"https://api.github.com/repos/jecrockett/the_pivot/pulls{/number}","milestones_url":"https://api.github.com/repos/jecrockett/the_pivot/milestones{/number}","notifications_url":"https://api.github.com/repos/jecrockett/the_pivot/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/jecrockett/the_pivot/labels{/name}","releases_url":"https://api.github.com/repos/jecrockett/the_pivot/releases{/id}","deployments_url":"https://api.github.com/repos/jecrockett/the_pivot/deployments","created_at":"2016-02-01T21:50:20Z","updated_at":"2016-02-18T03:37:50Z","pushed_at":"2016-02-11T21:44:12Z","git_url":"git://github.com/jecrockett/the_pivot.git","ssh_url":"git@github.com:jecrockett/the_pivot.git","clone_url":"https://github.com/jecrockett/the_pivot.git","svn_url":"https://github.com/jecrockett/the_pivot","homepage":null,"size":26406,"stargazers_count":1,"watchers_count":1,"language":"Ruby","has_issues":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"open_issues_count":2,"forks":0,"open_issues":2,"watchers":1,"default_branch":"master","permissions":{"admin":false,"push":true,"pull":true}}]'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 00:14:20 GMT
+  recorded_at: Fri, 19 Feb 2016 01:30:09 GMT
 recorded_with: VCR 3.0.1
