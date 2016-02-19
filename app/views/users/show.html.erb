@@ -3,7 +3,7 @@
     <a href="#" class="brand-logo top-nav">BitPub</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li>
-        <%= link_to "GitHub Profile", "https://github.com/#{current_user.nickname}", target: "_blank" %>
+        <%= link_to "#{current_user.nickname}'s GitHub", "https://github.com/#{current_user.nickname}", target: "_blank" %>
       </li>
       <li>
         <%= link_to "Logout", "/logout", method: "delete" %>
@@ -74,27 +74,13 @@
       <row class="col s8">
 
         <div class="col s6">
-          <h5 class="center">Community Feed</h5>
-          <div class="box collection">
-            <table>
-              <tbody>
-                <% @repos.each do |repo| %>
-                  <tr>
-                    <td><%= repo[:name] %></td>
-                  </tr>
-                <% end %>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="col s6">
           <h5 class="center">Your Stats</h5>
           <div class="box collection">
             <table class="highlight">
               <tbody>
                 <tr>
                   <td>Total Contributions</td>
-                  <td><%= @total %></td>
+                  <td><%= link_to @total, "https://github.com/#{current_user.nickname}", target: "_blank" %></td>
                 </tr>
                 <tr>
                   <td>Longest Streak</td>
@@ -108,6 +94,21 @@
                   <td>My Organizations</td>
                   <td><%= link_to @orgs.count, "https://github.com/#{current_user.nickname}", target: "_blank" %></td>
                 </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col s6">
+          <h5 class="center">Community Feed</h5>
+          <div class="box collection">
+            <table>
+              <tbody>
+                <% @repos.each do |repo| %>
+                  <tr>
+                    <td><%= repo[:name] %></td>
+                  </tr>
+                <% end %>
               </tbody>
             </table>
           </div>
