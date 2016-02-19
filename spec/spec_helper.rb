@@ -29,7 +29,6 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  # OmniAuth.config.mock_auth[:github] = nil
   OmniAuth.config.test_mode = true
   OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
     :provider    =>   'github',
