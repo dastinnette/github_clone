@@ -47,30 +47,6 @@ RSpec.describe "GitHub API", type: :request do
     end
   end
 
-  it "returns a user's total commits" do
-    VCR.use_cassette("users_total_commits") do
-      service = @service.find_user_total_commits(user)
-
-      expect(service).to eq(856)
-    end
-  end
-
-  it "returns a user's current streak" do
-    VCR.use_cassette("users_current_streak") do
-      service = @service.find_user_current_streak(user)
-
-      expect(service).to eq(4)
-    end
-  end
-
-  it "returns a user's longest streak" do
-    VCR.use_cassette("users_longest_streak") do
-      service = @service.find_user_longest_streak(user)
-
-      expect(service).to eq(11)
-    end
-  end
-
   it "returns a user's organizations" do
     VCR.use_cassette("users_orgs") do
       orgs      = @service.org
@@ -80,4 +56,29 @@ RSpec.describe "GitHub API", type: :request do
       expect(service.org.count).to eq(1)
     end
   end
+
+  it "returns a user's total commits" do
+    VCR.use_cassette("users_total_commits") do
+      service = @service.total_commits(user)
+
+      expect(service).to eq(857)
+    end
+  end
+
+  it "returns a user's current streak" do
+    VCR.use_cassette("users_current_streak") do
+      service = @service.current_streak(user)
+
+      expect(service).to eq(4)
+    end
+  end
+
+  it "returns a user's longest streak" do
+    VCR.use_cassette("users_longest_streak") do
+      service = @service.longest_streak(user)
+
+      expect(service).to eq(11)
+    end
+  end
+
 end
