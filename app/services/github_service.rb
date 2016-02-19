@@ -45,7 +45,7 @@ attr_reader :connection, :current_user, :stats, :token
     parse_commit_messages(json_obj)
   end
 
-  def following_activity
+  def community_activity
     nicknames = self.following.map do |people|
       people[:login]
     end

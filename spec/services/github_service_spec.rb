@@ -93,7 +93,7 @@ RSpec.describe "GitHub API", type: :request do
 
   it "returns a list of followers and their recent commits" do
     VCR.use_cassette("users_community_feed") do
-      all_activity   = service.following_activity
+      all_activity   = service.community_activity
       last_following = all_activity.last
       commits        = last_following[:commits]
 

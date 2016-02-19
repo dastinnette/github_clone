@@ -104,9 +104,12 @@
           <div class="box collection">
             <table class="highlight">
               <tbody>
-                <%= @following_activity.each do |message| %>
+                <% @community_feed.each do |obj| %>
                   <tr>
-                    <td><%= message[:commits] %></td>
+                    <td><%= obj[:nickname] %></td>
+                  </tr>
+                  <tr>
+                    <td><%= obj[:commits] %></td>
                   </tr>
                 <% end %>
               </tbody>

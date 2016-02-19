@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-02-19T12:18:41-07:00">2016-02-19T12:18:41-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-02-19T15:13:18-07:00">2016-02-19T15:13:18-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -429,61 +429,61 @@
         <li class="covered" data-hits="2" data-linenumber="6">
           <span class="hits">2</span>
           
-          <code class="ruby">    @followings         = github_service.following</code>
+          <code class="ruby">    @followings     = github_service.following</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="7">
           <span class="hits">2</span>
           
-          <code class="ruby">    @followers          = github_service.follower</code>
+          <code class="ruby">    @followers      = github_service.follower</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="8">
           <span class="hits">2</span>
           
-          <code class="ruby">    @stars              = github_service.star</code>
+          <code class="ruby">    @stars          = github_service.star</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="9">
           <span class="hits">2</span>
           
-          <code class="ruby">    @repos              = github_service.repo</code>
+          <code class="ruby">    @repos          = github_service.repo</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="10">
           <span class="hits">2</span>
           
-          <code class="ruby">    @orgs               = github_service.org</code>
+          <code class="ruby">    @orgs           = github_service.org</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="11">
           <span class="hits">2</span>
           
-          <code class="ruby">    @total              = github_service.total_commits(current_user)</code>
+          <code class="ruby">    @total          = github_service.total_commits(current_user)</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="12">
           <span class="hits">2</span>
           
-          <code class="ruby">    @longest            = github_service.longest_streak(current_user)</code>
+          <code class="ruby">    @longest        = github_service.longest_streak(current_user)</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="13">
           <span class="hits">2</span>
           
-          <code class="ruby">    @current            = github_service.current_streak(current_user)</code>
+          <code class="ruby">    @current        = github_service.current_streak(current_user)</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="14">
           <span class="hits">2</span>
           
-          <code class="ruby">    @following_activity = github_service.following_activity</code>
+          <code class="ruby">    @community_feed = github_service.community_activity</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="15">
           <span class="hits">2</span>
           
-          <code class="ruby">    @commits            = github_service.recent_commits</code>
+          <code class="ruby">    @commits        = github_service.recent_commits</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -975,7 +975,7 @@
         <li class="covered" data-hits="1" data-linenumber="48">
           <span class="hits">1</span>
           
-          <code class="ruby">  def following_activity</code>
+          <code class="ruby">  def community_activity</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="49">
@@ -1068,14 +1068,14 @@
           <code class="ruby">    commit_events.map do |event|</code>
         </li>
       
-        <li class="covered" data-hits="258" data-linenumber="64">
-          <span class="hits">258</span>
+        <li class="covered" data-hits="260" data-linenumber="64">
+          <span class="hits">260</span>
           
           <code class="ruby">      event[:payload][:commits].map do |commit|</code>
         </li>
       
-        <li class="covered" data-hits="528" data-linenumber="65">
-          <span class="hits">528</span>
+        <li class="covered" data-hits="526" data-linenumber="65">
+          <span class="hits">526</span>
           
           <code class="ruby">        commit[:message]</code>
         </li>
@@ -2097,7 +2097,7 @@
         <li class="covered" data-hits="1" data-linenumber="96">
           <span class="hits">1</span>
           
-          <code class="ruby">      all_activity   = service.following_activity</code>
+          <code class="ruby">      all_activity   = service.community_activity</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="97">
