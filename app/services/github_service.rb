@@ -46,9 +46,6 @@ attr_reader :connection, :current_user, :stats, :token
   end
 
   def community_activity
-    nicknames = self.following.map do |people|
-      people[:login]
-    end
     nicknames.map do |nickname|
       json_obj = parse(connection.get("/users/#{nickname}/events", token))
       messages = parse_commit_messages(json_obj)
@@ -57,6 +54,10 @@ attr_reader :connection, :current_user, :stats, :token
   end
 
   private
+
+  def nicknames
+    nicknames = self.following.map { |people| people[:login] }
+  end
 
   def parse_commit_messages(events)
     commit_events = events.select { |collection| collection[:type] == "PushEvent" }

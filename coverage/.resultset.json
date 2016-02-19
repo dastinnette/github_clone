@@ -246,6 +246,11 @@
         2,
         null,
         null,
+        1,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/davidstinnette/Turing/3module/1510/github_clone/app/services/github_service.rb": [
@@ -312,8 +317,8 @@
         1,
         525,
         null,
-        260,
-        526,
+        258,
+        524,
         null,
         18,
         null,
@@ -325,6 +330,6 @@
         null
       ]
     },
-    "timestamp": 1455919998
+    "timestamp": 1455921393
   }
 }

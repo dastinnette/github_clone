@@ -25,15 +25,15 @@
         <tbody>
           <tr>
             <td>Followers</td>
-            <td><%= link_to @followers.count, "https://github.com/#{current_user.nickname}/followers", target: "_blank" %></td>
+            <td><%= link_to @user_show.follower.count, "https://github.com/#{current_user.nickname}/followers", target: "_blank" %></td>
           </tr>
           <tr>
             <td>Starred</td>
-            <td><%= link_to @stars.count, "https://github.com/stars", target: "_blank" %></td>
+            <td><%= link_to @user_show.star.count, "https://github.com/stars", target: "_blank" %></td>
           </tr>
           <tr>
             <td>Following</td>
-            <td><%= link_to @followings.count, "https://github.com/#{current_user.nickname}/following", target: "_blank" %></td>
+            <td><%= link_to @user_show.following.count, "https://github.com/#{current_user.nickname}/following", target: "_blank" %></td>
           </tr>
         </tbody>
       </table>
@@ -46,7 +46,7 @@
         <div class="box collection">
           <table class="highlight">
             <tbody>
-              <% @repos.each do |repo| %>
+              <% @user_show.repo.each do |repo| %>
                 <tr>
                   <td><%= link_to repo[:name], "https://github.com/#{repo[:full_name]}", target: "_blank" %></td>
                 </tr>
@@ -61,7 +61,7 @@
         <div class="box collection">
           <table class="highlight">
             <tbody>
-              <% @commits.each do |commit| %>
+              <% @user_show.recent_commits.each do |commit| %>
                 <tr>
                   <td><%= commit %></td>
                 </tr>
@@ -80,19 +80,19 @@
               <tbody>
                 <tr>
                   <td>Total Contributions</td>
-                  <td><%= link_to @total, "https://github.com/#{current_user.nickname}", target: "_blank" %></td>
+                  <td><%= link_to @user_show.total_commits(current_user), "https://github.com/#{current_user.nickname}", target: "_blank" %></td>
                 </tr>
                 <tr>
                   <td>Longest Streak</td>
-                  <td><%= @longest %> days</td>
+                  <td><%= @user_show.longest_streak(current_user) %> days</td>
                 </tr>
                 <tr>
                   <td>Current Streak</td>
-                  <td><%= @current %> days</td>
+                  <td><%= @user_show.current_streak(current_user) %> days</td>
                 </tr>
                 <tr>
                   <td>My Organizations</td>
-                  <td><%= link_to @orgs.count, "https://github.com/#{current_user.nickname}", target: "_blank" %></td>
+                  <td><%= link_to @user_show.org.count, "https://github.com/#{current_user.nickname}", target: "_blank" %></td>
                 </tr>
               </tbody>
             </table>
@@ -104,12 +104,9 @@
           <div class="box collection">
             <table class="highlight">
               <tbody>
-                <% @community_feed.each do |obj| %>
+                <% @user_show.community_activity.each do |obj| %>
                   <tr>
-                    <td><%= obj[:nickname] %></td>
-                  </tr>
-                  <tr>
-                    <td><%= obj[:commits] %></td>
+                    <td><%= obj[:nickname] %>, <%= obj[:commits] %></td>
                   </tr>
                 <% end %>
               </tbody>
