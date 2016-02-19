@@ -59,11 +59,11 @@
         <br>
         <h5 class="center">Recent Activity</h5>
         <div class="box collection">
-          <table>
+          <table class="highlight">
             <tbody>
-              <% @repos.each do |repo| %>
+              <% @commits.each do |commit| %>
                 <tr>
-                  <td><%= repo[:name] %></td>
+                  <td><%= commit %></td>
                 </tr>
               <% end %>
             </tbody>
@@ -104,11 +104,7 @@
           <div class="box collection">
             <table>
               <tbody>
-                <% @repos.each do |repo| %>
-                  <tr>
-                    <td><%= repo[:name] %></td>
-                  </tr>
-                <% end %>
+
               </tbody>
             </table>
           </div>
