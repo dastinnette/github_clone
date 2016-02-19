@@ -27,7 +27,7 @@
 }
 
 .box {
-  max-height: 220px;
+  height: 220px;
   overflow-y: auto;
 }
 
