@@ -91,15 +91,15 @@ RSpec.describe "GitHub API", type: :request do
     end
   end
 
-  xit "returns a list of followers and their recent commits" do
+  it "returns a list of followers and their recent commits" do
     VCR.use_cassette("users_community_feed") do
-      all_activity = @service.following_activity
+      all_activity   = service.following_activity
       last_following = all_activity.last
-      commits = last_following[:commits]
+      commits        = last_following[:commits]
 
-      expect(all_activity.count).to eq(7)
-      expect(last_following[:nickname]).to eq("danjwinter")
-      expect(commits.first).to eq("add rails 12 factor")
+      expect(all_activity.count).to eq(5)
+      expect(last_following[:nickname]).to eq("applegrain")
+      expect(commits.first).to eq("remove comments")
     end
   end
 
