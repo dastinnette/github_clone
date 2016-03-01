@@ -1,8 +1,8 @@
-# APIcurious - GitHub Dashboard Reconstruction
+# GitHub Clone - GitHub Dashboard Reconstruction
 
 ## Overview
 
-This project uses the GitHub API to implement a 3rd party app that uses OAuth 2.0 to log users in via GitHub and to consume their data to display a similar looking dashboard.
+This project uses the GitHub API to implement a 3rd party app that uses Omniauth-GitHub to log users in via GitHub and to consume their data to display a similar looking dashboard.
 
 ## Dependencies
 
